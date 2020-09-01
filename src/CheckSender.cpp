@@ -6,4 +6,5 @@
 
 std::string CheckSender::sendPayment() const {
     return "Sending the check with the money";
+
 }
