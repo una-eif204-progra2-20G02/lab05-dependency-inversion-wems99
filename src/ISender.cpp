@@ -3,3 +3,7 @@
 //
 
 #include "ISender.h"
+
+ISender::~ISender() {
+
+}

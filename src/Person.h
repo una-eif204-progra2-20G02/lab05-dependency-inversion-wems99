@@ -7,6 +7,8 @@
 #include "CashSender.h"
 #include "CheckSender.h"
 
+#include "ISender.h"
+
 /**
  * Abstract Class of Person
  */
@@ -31,9 +33,7 @@ public:
 
     void setDocumentId(int documentId);
 
-    std::string processPaymentBankTransfer();
-    std::string processPaymentCash();
-    std::string processPaymentCheck();
+   std:: string voucher(ISender* sender);
 
     virtual std::string toString() const; // Virtual
 private:
